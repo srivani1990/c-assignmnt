@@ -1,0 +1,24 @@
+1. Write a C program to find sum of all array elements. - using recursion.
+#include<stdio.h>
+int sum(int a[])
+{
+ int sum=0, i;
+       for(i=0;i<5;i++)
+    {
+         sum = sum+a[i];
+  }
+       return sum;
+    }
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    int result,i;
+    printf("numbers:");
+    for(i=0;i<5;i++)
+    {
+        printf("%d  ",a[i]);
+    }
+    result=sum(a);
+       printf("\nsum=%d",result);
+       return 0;
+    }
